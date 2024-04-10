@@ -1,0 +1,60 @@
+.show-statistics {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+.statistics {
+  position: relative;
+  padding: 1rem;
+}
+
+.statistics::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border: 2.5px solid hsl(271, 68%, 65%);
+  border-radius: 0.5rem;
+  filter: drop-shadow(0 0 0.5rem hsl(271, 68%, 65%));
+  z-index: -1;
+}
+
+.title,
+.team-name,
+.sub-title {
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  filter: drop-shadow(0 0 0.5rem hsl(271, 68%, 65%));
+}
+
+.team-name {
+  font-size: 2.2rem;
+}
+
+.sub-title {
+  font-size: 1.5rem;
+}
+
+.players-nicknames {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  gap: 10px;
+  list-style: none;
+}
+
+.matches {
+  list-style: none;
+  padding: 0;
+}
+.matches li {
+  text-align: center;
+}

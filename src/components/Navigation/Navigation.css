@@ -1,0 +1,15 @@
+.nav-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: center;
+  gap: 30px;
+}
+
+.nav-item {
+  list-style-type: none;
+}
+
+.menu {
+  font-size: 1.7rem;
+}
